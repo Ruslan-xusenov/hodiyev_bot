@@ -1,0 +1,690 @@
+2025-07-21 23:29:45,381 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-21 23:34:42,971 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-21 23:37:53,722 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-21 23:38:46,632 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=BadRequest("Can't parse inline keyboard button: inlinekeyboardbutton must be an object")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 104, in start_handler
+    await message.answer(text, reply_markup=markup)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/types/message.py", line 438, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: inlinekeyboardbutton must be an object
+2025-07-21 23:40:39,991 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-61' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=BadRequest("Can't parse inline keyboard button: inlinekeyboardbutton must be an object")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 104, in start_handler
+    await message.answer(text, reply_markup=markup)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/types/message.py", line 438, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: inlinekeyboardbutton must be an object
+2025-07-21 23:40:59,261 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-21 23:43:26,391 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=BadRequest("Can't parse inline keyboard button: inlinekeyboardbutton must be an object")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 104, in start_handler
+    await message.answer(text, reply_markup=markup)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/types/message.py", line 438, in answer
+    return await self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: inlinekeyboardbutton must be an object
+2025-07-21 23:45:21,781 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-21 23:48:57,892 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-21 23:52:13,004 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-21 23:55:42,546 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 00:03:01,589 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 00:05:11,522 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 00:10:45,988 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 00:11:24,271 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 00:27:40,028 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 00:29:25,429 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 00:30:30,632 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 01:37:33,998 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 01:40:20,551 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 01:47:44,549 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 01:48:09,237 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 9, in wrapper
+    if not await check_subs(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/utils.py", line 8, in check_subs
+    member = await Bot.get_current().get_chat_member(chat_id=ch, user_id=user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2682, in get_chat_member
+    result = await self.request(api.Methods.GET_CHAT_MEMBER, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-22 01:48:36,373 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-64' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 9, in wrapper
+    if not await check_subs(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/utils.py", line 8, in check_subs
+    member = await Bot.get_current().get_chat_member(chat_id=ch, user_id=user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2682, in get_chat_member
+    result = await self.request(api.Methods.GET_CHAT_MEMBER, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-22 01:48:37,500 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-69' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 9, in wrapper
+    if not await check_subs(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/utils.py", line 8, in check_subs
+    member = await Bot.get_current().get_chat_member(chat_id=ch, user_id=user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2682, in get_chat_member
+    result = await self.request(api.Methods.GET_CHAT_MEMBER, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-22 01:56:14,616 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 01:56:22,195 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 9, in wrapper
+    if not await check_subs(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/utils.py", line 8, in check_subs
+    member = await Bot.get_current().get_chat_member(chat_id=ch, user_id=user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2682, in get_chat_member
+    result = await self.request(api.Methods.GET_CHAT_MEMBER, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-22 01:56:22,911 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 9, in wrapper
+    if not await check_subs(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/utils.py", line 8, in check_subs
+    member = await Bot.get_current().get_chat_member(chat_id=ch, user_id=user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2682, in get_chat_member
+    result = await self.request(api.Methods.GET_CHAT_MEMBER, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-22 01:56:23,123 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 9, in wrapper
+    if not await check_subs(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/utils.py", line 8, in check_subs
+    member = await Bot.get_current().get_chat_member(chat_id=ch, user_id=user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2682, in get_chat_member
+    result = await self.request(api.Methods.GET_CHAT_MEMBER, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-22 01:56:23,339 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-26' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 9, in wrapper
+    if not await check_subs(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/utils.py", line 8, in check_subs
+    member = await Bot.get_current().get_chat_member(chat_id=ch, user_id=user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2682, in get_chat_member
+    result = await self.request(api.Methods.GET_CHAT_MEMBER, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-22 01:56:23,551 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-30' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 9, in wrapper
+    if not await check_subs(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/utils.py", line 8, in check_subs
+    member = await Bot.get_current().get_chat_member(chat_id=ch, user_id=user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2682, in get_chat_member
+    result = await self.request(api.Methods.GET_CHAT_MEMBER, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-22 01:56:23,986 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-34' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 9, in wrapper
+    if not await check_subs(message.from_user.id):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/utils.py", line 8, in check_subs
+    member = await Bot.get_current().get_chat_member(chat_id=ch, user_id=user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2682, in get_chat_member
+    result = await self.request(api.Methods.GET_CHAT_MEMBER, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-22 02:01:09,116 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 02:09:23,433 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 02:15:22,201 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 02:15:29,220 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("object function can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object function can't be used in 'await' expression
+2025-07-22 02:15:39,251 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("object function can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object function can't be used in 'await' expression
+2025-07-22 02:15:40,349 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("object function can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object function can't be used in 'await' expression
+2025-07-22 02:15:41,171 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("object function can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object function can't be used in 'await' expression
+2025-07-22 02:15:41,885 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-28' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("object function can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object function can't be used in 'await' expression
+2025-07-22 02:15:42,192 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-32' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("object function can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object function can't be used in 'await' expression
+2025-07-22 02:15:42,405 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-35' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("object function can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object function can't be used in 'await' expression
+2025-07-22 02:15:42,704 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-38' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("object function can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object function can't be used in 'await' expression
+2025-07-22 02:15:42,918 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-42' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("object function can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object function can't be used in 'await' expression
+2025-07-22 02:16:55,306 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 02:16:59,653 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("object function can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object function can't be used in 'await' expression
+2025-07-22 02:18:53,469 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-22 02:20:15,911 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-132' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=TypeError("get_not_subscribed_channels() missing 1 required positional argument: 'user_id'")>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 188, in recheck_subs
+    not_joined = await get_not_subscribed_channels(user_id)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_not_subscribed_channels() missing 1 required positional argument: 'user_id'
+2025-07-22 02:21:51,149 - aiogram.dispatcher.dispatcher - INFO - Start polling.
