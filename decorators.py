@@ -11,18 +11,34 @@ def require_subscription(bot):
 
             if not_joined:
                 text = "❗ Iltimos, quyidagi kanallarga obuna bo‘ling:\n\n"
-                for ch in not_joined:
-                    text += f"🔸 <a href='https://t.me/{ch.username}'>{ch.title}</a>\n"
+                inline = types.InlineKeyboardMarkup()
 
-                markup = types.InlineKeyboardMarkup()
                 for ch in not_joined:
-                    markup.add(types.InlineKeyboardButton(
-                        text=f"📲 {ch.title}",
-                        url=f"https://t.me/{ch.username}"
+                    username = ch.get("username", "").lstrip("@")
+                    title = ch.get("title", "Kanal")
+                    text += f"🔸 <a href='https://t.me/{username}'>{title}</a>\n"
+                    inline.add(types.InlineKeyboardButton(
+                        text=f"📲 {title}",
+                        url=f"https://t.me/{username}"
                     ))
-                markup.add(types.InlineKeyboardButton("✅ Tekshirish", callback_data="check_subs"))
 
-                await message.answer(text, reply_markup=markup, parse_mode="HTML", disable_web_page_preview=True)
+                # Pastki menyu (reply keyboard)
+                reply = types.ReplyKeyboardMarkup(resize_keyboard=True)
+                reply.add("✅ Tekshirish")
+
+                # Inline tugmalar bilan kanal ro‘yxati
+                await message.answer(
+                    text,
+                    reply_markup=inline,
+                    parse_mode="HTML",
+                    disable_web_page_preview=True
+                )
+
+                # Pastki reply tugma bilan qo‘shimcha xabar
+                await message.answer(
+                    "Obuna bo‘lgach, pastdagi «✅ Tekshirish» tugmasini bosing 👇",
+                    reply_markup=reply
+                )
                 return
 
             return await handler(message, *args, **kwargs)

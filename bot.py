@@ -65,51 +65,35 @@ async def send_secret_channel(user_id: int, level: int):
             text=f"{messages[level]}\n{links[level]}"
         )
 
-@dp.message_handler(lambda msg: msg.text == "🔐 Maxfiy kanal")
+@dp.message_handler(lambda message: message.text == "🔐 Maxfiy kanal")
 @require_subscription(bot)
 async def secret_group_access(message: types.Message):
-    user_id = str(message.from_user.id)
+    user_id = message.from_user.id
     data = load_data()
 
-    if user_id not in data:
-        await message.answer("Iltimos, /start tugmasini bosing.")
-        return
+    referrals = data[str(user_id)].get("referrals", [])
+    bonus_level = data[str(user_id)].get("bonus_level", 0)
 
-    referrals = len(set(data[user_id]["referrals"]))
-    bonus_level = data[user_id].get("bonus_level", 0)
-
-    secret_links = {
-        1: {
-            "link": "https://t.me/+GMBcIQpSD-JjZDFi",
-            "text": "🎉 Tabriklaymiz! Siz 20+ do‘st chaqirdingiz. Maxfiy guruh havolasi 👇"
-        },
-        2: {
-            "link": "https://t.me/+S-vPexKC4GY4YmMy",
-            "text": "🚀 Siz 40+ do‘st chaqirdingiz! Ikkinchi maxfiy guruh havolasi:"
-        },
-        3: {
-            "link": "https://t.me/+N40A5zIrXHliOTUy",
-            "text": "🔥 60+ referal! Uchinchi bosqich havolasi mana bu yerda:"
-        },
-        4: {
-            "link": "https://t.me/+nmKGx-BUullkMGQy",
-            "text": "👑 Siz TOP darajaga yetdingiz! Maxsus VIP havola:"
-        }
-    }
-
-    response = ""
-    for level in range(1, 5):
-        if referrals >= level * 20 and bonus_level >= level:
-            key = f"link_sent_{level}"
-            if not data[user_id].get(key, False):
-                data[user_id][key] = True
-                response += f"{secret_links[level]['text']}\n{secret_links[level]['link']}\n\n"
-
-    if response:
-        await message.answer(response.strip())
+    if len(referrals) >= 20 and bonus_level < 1:
+        await send_secret_channel(user_id, 1)
+        data[str(user_id)]["bonus_level"] = 1
+        save_data(data)
+    elif len(referrals) >= 40 and bonus_level < 2:
+        await send_secret_channel(user_id, 2)
+        data[str(user_id)]["bonus_level"] = 2
+        save_data(data)
+    elif len(referrals) >= 60 and bonus_level < 3:
+        await send_secret_channel(user_id, 3)
+        data[str(user_id)]["bonus_level"] = 3
+        save_data(data)
+    elif len(referrals) >= 80 and bonus_level < 4:
+        await send_secret_channel(user_id, 4)
+        data[str(user_id)]["bonus_level"] = 4
         save_data(data)
     else:
-        await message.answer("❗ Hozircha sizga maxfiy guruhlar uchun havola mavjud emas. Do‘stlaringizni taklif qilishda davom eting!")
+        await message.answer("❗Sizda hali yetarli referallar yo‘q")
+
+
 
 
 @dp.message_handler(commands=["start"])
@@ -158,6 +142,7 @@ async def start_handler(message: types.Message):
                     ref_user["bonus_level"] = new_level
                     await send_secret_channel(int(ref_id), new_level)
 
+
     save_data(data)
 
     try:
@@ -175,7 +160,7 @@ async def start_handler(message: types.Message):
 
     ref_count = len(data[str(user_id)]["referrals"])
     btns = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-    btns.add("🔗 Referal havolam", "📊 Reyting", "🎁 Sovrinlar")
+    btns.add("🔗 Ishtirok etish", "📊 Reyting", "🎁 Sovrinlar")
     btns.add("🔐 Maxfiy kanal")
     if str(user_id) in ADMIN_IDS:
         btns.add("📢 Xabar yuborish", "🎬 Reklamani o‘zgartirish")
@@ -188,21 +173,46 @@ async def recheck_subs(message: types.Message):
     not_joined = await get_not_subscribed_channels(bot, user_id)
 
     if not_joined:
+        # ❌ Hali ham obuna bo‘lmagan kanallar bor — qayta taklif qilamiz
         text = "🚫 Hali ham quyidagi kanallarga obuna emassiz:\n\n"
-        for ch in not_joined:
-            text += f"🔸 <a href='https://t.me/{ch['username'][1:]}'>{ch['title']}</a>\n"
-        text += "\nIltimos, barcha kanallarga obuna bo‘ling va qaytadan «✅ Tekshirish» tugmasini bosing."
-
         inline = types.InlineKeyboardMarkup()
         for ch in not_joined:
+            username = ch.get("username", "").lstrip("@")
+            title = ch.get("title", "Kanal")
+            text += f"🔸 <a href='https://t.me/{username}'>{title}</a>\n"
             inline.add(types.InlineKeyboardButton(
-                text=f"📲 {ch['title']}",
-                url=f"https://t.me/{ch['username'][1:]}"
+                text=f"📲 {title}",
+                url=f"https://t.me/{username}"
             ))
-
+        text += "\n\nIltimos, barcha kanallarga obuna bo‘ling va qaytadan «✅ Tekshirish» tugmasini bosing."
         await message.answer(text, reply_markup=inline, parse_mode="HTML", disable_web_page_preview=True)
-    else:
-        await start_handler(message)
+        return
+
+    # ✅ Obuna bo‘lgan — endi referalni tekshiramiz
+    data = load_data()
+
+    # temp_ref_id orqali referal hisoblash
+    ref_id = data.get(str(user_id), {}).get("temp_ref_id")
+    if ref_id and ref_id != str(user_id):
+        if ref_id in data:
+            ref_user = data[ref_id]
+            if str(user_id) not in ref_user["referrals"]:
+                ref_user["referrals"].append(str(user_id))
+
+                # Bonus darajasini tekshiramiz
+                referral_count = len(set(ref_user["referrals"]))
+                old_level = ref_user.get("bonus_level", 0)
+                new_level = referral_count // 20
+                if new_level > old_level:
+                    ref_user["bonus_level"] = new_level
+                    await send_secret_channel(int(ref_id), new_level)
+
+        # temp_ref_id ni olib tashlaymiz — endi kerakmas
+        del data[str(user_id)]["temp_ref_id"]
+        save_data(data)
+
+    # 🔁 start_handler orqali foydalanuvchini asosiy menyuga qaytaramiz
+    await start_handler(message)
 
 @dp.callback_query_handler(lambda c: c.data == "check_subs")
 async def check_subscriptions(callback: types.CallbackQuery):
@@ -214,18 +224,48 @@ async def check_subscriptions(callback: types.CallbackQuery):
         await callback.answer("❌ Hali hamma kanallarga obuna bo‘lmadingiz", show_alert=True)
         return
 
+    # ✅ Obuna bo‘lgan — joined belgilash
     data[str(user_id)]["joined"] = True
+
+    # ✅ Referalni hisoblash (agar hali hisoblanmagan bo‘lsa)
+    temp_ref = data[str(user_id)].get("temp_ref_id")
+    if temp_ref and temp_ref != str(user_id):
+        ref_id = temp_ref
+        if ref_id in data and str(user_id) not in data[ref_id]["referrals"]:
+            data[ref_id]["referrals"].append(str(user_id))
+            referral_count = len(set(data[ref_id]["referrals"]))
+            old_level = data[ref_id].get("bonus_level", 0)
+            new_level = referral_count // 20
+            if new_level > old_level:
+                data[ref_id]["bonus_level"] = new_level
+                await send_secret_channel(int(ref_id), new_level)
+
+    # ✅ Saqlab qo‘yish
     save_data(data)
+
     ref_count = len(data[str(user_id)]["referrals"])
 
+    # 🔘 Menu tugmalar
     btns = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-    btns.add("🔗 Referal havolam", "📊 Reyting", "🎁 Sovrinlar")
+    btns.add("🔗 Ishtirok etish", "📊 Reyting", "🎁 Sovrinlar")
     if str(user_id) in ADMIN_IDS:
         btns.add("📢 Xabar yuborish", "🎬 Reklamani o‘zgartirish")
-    
-    await callback.message.answer(welcome_text(username, ref_count), reply_markup=btns)
-    await callback.answer()
 
+    # ❌ Eski xabarni o‘chirish
+    try:
+        await callback.message.delete()
+    except Exception:
+        pass
+
+    # 🟢 Xush kelibsiz xabari
+    await bot.send_message(
+        user_id,
+        welcome_text(username, ref_count),
+        reply_markup=btns
+    )
+    await callback.answer("✅ Obuna tasdiqlandi")
+
+    # 🎬 Reklama videosi (ixtiyoriy)
     try:
         reklama_text = load_reklama_text()
         with open(REKLAMA_FILE, "rb") as video_file:
@@ -239,7 +279,7 @@ async def check_subscriptions(callback: types.CallbackQuery):
         logging.error(f"Video send error: {e}")
         await bot.send_message(user_id, "🎬 Reklama videosi")
 
-@dp.message_handler(lambda m: m.text == "🔗 Referal havolam")
+@dp.message_handler(lambda m: m.text == "🔗 Ishtirok etish")
 @require_subscription(bot)
 async def send_referral_link(message: types.Message):
     user_id = message.from_user.id
@@ -251,7 +291,7 @@ async def send_referral_link(message: types.Message):
 
 @dp.message_handler(lambda m: m.text == "🎁 Sovrinlar")
 @require_subscription(bot)
-async def show_rewards(message: types.Message):
+async def rewards_handler(message: types.Message):
     user_id = message.from_user.id
     data = load_data()
     user_data = data.get(str(user_id), {})
@@ -271,7 +311,7 @@ async def show_rewards(message: types.Message):
     )
     await message.answer(text)
 
-@dp.message_handler(lambda m: m.text == "🔐 Maxfiy kanal")
+@dp.message_handler(lambda m: m.text == "🔐 Bonus kanllar")
 @require_subscription(bot)
 async def secret_group_access(message: types.Message):
     if not await check_subs(message.from_user.id):
