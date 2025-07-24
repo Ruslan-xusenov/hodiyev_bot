@@ -2053,3 +2053,313 @@ Traceback (most recent call last):
   File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
     raise err(cls.text or description)
 aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:28:06,819 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:28:13,007 - root - ERROR - ❌ 1-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:28:13,484 - root - ERROR - ❌ 2-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:28:13,827 - root - ERROR - ❌ 3-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:28:14,156 - root - ERROR - ❌ 4-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:29:01,993 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:29:07,599 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:29:12,892 - root - ERROR - ❌ 1-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:29:13,247 - root - ERROR - ❌ 2-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:29:13,592 - root - ERROR - ❌ 3-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:29:13,938 - root - ERROR - ❌ 4-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:30:15,513 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:30:24,229 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:30:34,134 - root - ERROR - ❌ 1-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:30:34,489 - root - ERROR - ❌ 2-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:30:34,937 - root - ERROR - ❌ 3-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:30:35,452 - root - ERROR - ❌ 4-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:30:53,573 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:30:56,655 - root - ERROR - ❌ 1-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:30:56,968 - root - ERROR - ❌ 2-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:30:57,294 - root - ERROR - ❌ 3-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:30:57,575 - root - ERROR - ❌ 4-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found

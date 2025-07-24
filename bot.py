@@ -55,10 +55,10 @@ async def get_channel_id(message: types.Message):
         await message.reply("❗ Iltimos, bu komandani kanal ichida yuboring (bot admin bo’lishi lozim).")
 
 CHANNEL_LINKS = {
-    1: {"id": -1001234567890, "fallback": "https://t.me/+MpQ86tXpBwVjNDky"},
-    2: {"id": -1001234567891, "fallback": "https://t.me/+UV0okVAxAC0wMzZi"},
-    3: {"id": -1001234567892, "fallback": "https://t.me/+6a9YaR4t-wwwMjEy"},
-    4: {"id": -1001234567893, "fallback": "https://t.me/+-2GTTR-_oYAwMjAy"},
+    1: {"id": -1001234567890, "fallback": "https://t.me/+GMBcIQpSD-JjZDFi"},
+    2: {"id": -1001234567891, "fallback": "https://t.me/+S-vPexKC4GY4YmMy"},
+    3: {"id": -1001234567892, "fallback": "https://t.me/+N40A5zIrXHliOTUy"},
+    4: {"id": -1001234567893, "fallback": "https://t.me/+nmKGx-BUullkMGQy"},
 }
 
 async def send_secret_channel(user_id: int, max_level: int):
