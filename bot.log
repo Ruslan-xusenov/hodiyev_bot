@@ -1191,3 +1191,865 @@ AttributeError: 'dict' object has no attribute 'lstrip'
 2025-07-23 22:31:49,746 - aiogram.dispatcher.dispatcher - INFO - Start polling.
 2025-07-23 22:44:46,713 - aiogram.dispatcher.dispatcher - INFO - Start polling.
 2025-07-23 22:45:25,550 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 15:23:43,143 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 15:24:04,120 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 15:25:49,160 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 15:26:25,275 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 15:49:04,530 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 15:50:48,816 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 16:04:34,828 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 16:04:45,383 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 16:04:56,020 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 21:55:58,264 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 21:56:05,671 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:00:02,957 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:02:34,524 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:03:16,994 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:07:28,028 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:14:26,330 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:16:43,606 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:18:51,537 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:21:36,035 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:22:57,196 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:25:08,747 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:26:32,966 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:50:29,804 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:52:17,133 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:54:11,706 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:54:40,503 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 22:56:48,508 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:03:02,972 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:03:28,956 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:03:32,903 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=BadRequest('Message caption is too long')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 41, in wrapper
+    return await handler(message, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 335, in send_referral_link
+    await message.answer_photo(
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/types/message.py", line 511, in answer_photo
+    return await self.bot.send_photo(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 565, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Message caption is too long
+2025-07-24 23:03:39,045 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-26' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=BadRequest('Message caption is too long')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 41, in wrapper
+    return await handler(message, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 335, in send_referral_link
+    await message.answer_photo(
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/types/message.py", line 511, in answer_photo
+    return await self.bot.send_photo(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 565, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Message caption is too long
+2025-07-24 23:05:57,650 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:06:48,251 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:13:24,833 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:14:08,113 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:14:54,835 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:14:57,172 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:02,576 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:07,903 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:11,931 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:15:13,323 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:18,651 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:23,977 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:29,300 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:31,403 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:15:34,626 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:39,958 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:45,290 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:50,614 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:15:55,935 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:16:01,261 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:16:06,585 - aiogram.dispatcher.dispatcher - ERROR - Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2025-07-24 23:16:13,840 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:17:45,066 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:19:42,133 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:21:53,000 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:23:01,528 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:24:18,888 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:25:19,518 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:30:27,993 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:31:01,761 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<Dispatcher._process_polling_updates() done, defined at /home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:410> exception=FileNotFoundError(2, 'No such file or directory')>
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/decorators.py", line 41, in wrapper
+    return await handler(message, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 78, in secret_group_access
+    photo = types.InputFile("media/bonus.jpg")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/types/input_file.py", line 40, in __init__
+    self._file = open(path_or_bytesio, 'rb')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'media/bonus.jpg'
+2025-07-24 23:31:37,028 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:45:49,086 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:45:55,024 - root - ERROR - Havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 63, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-24 23:46:07,379 - aiogram.dispatcher.dispatcher - WARNING - Polling is stopped.
+2025-07-24 23:46:07,418 - aiogram.dispatcher.dispatcher - INFO - Stop polling...
+2025-07-24 23:47:39,020 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:48:53,276 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:49:04,650 - root - ERROR - Havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 63, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-24 23:50:25,251 - aiogram.dispatcher.dispatcher - WARNING - Polling is stopped.
+2025-07-24 23:50:25,289 - aiogram.dispatcher.dispatcher - INFO - Stop polling...
+2025-07-24 23:50:44,744 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:51:13,440 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:51:17,565 - root - ERROR - Havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 63, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-24 23:55:48,931 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:56:06,087 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-24 23:56:09,419 - root - ERROR - ❌ Havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 65, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:06:11,014 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:06:31,237 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:06:34,257 - root - ERROR - ❌ Havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 71, in send_secret_channel
+    expire_date=datetime.now() + timedelta(days=1),
+                ^^^^^^^^
+NameError: name 'datetime' is not defined
+2025-07-25 00:07:51,516 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:08:03,371 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:08:06,418 - root - ERROR - ❌ Havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 72, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:09:15,953 - root - ERROR - ❌ Havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 72, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:12:45,185 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:18:09,823 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:18:26,118 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:18:29,539 - root - ERROR - ❌ Maxsus havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 80, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:19:30,680 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:19:34,347 - root - ERROR - ❌ 1-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 80, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:19:34,653 - root - ERROR - ❌ 2-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 80, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:19:34,900 - root - ERROR - ❌ 3-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 80, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:19:35,177 - root - ERROR - ❌ 4-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 80, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:20:52,770 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:21:06,894 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:21:13,791 - root - ERROR - ❌ 1-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 80, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:21:14,085 - root - ERROR - ❌ 2-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 80, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:21:14,406 - root - ERROR - ❌ 3-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 80, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:21:14,717 - root - ERROR - ❌ 4-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 80, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:22:14,414 - aiogram.dispatcher.dispatcher - INFO - Start polling.
+2025-07-25 00:22:16,671 - root - ERROR - ❌ 1-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:22:16,978 - root - ERROR - ❌ 2-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:22:17,282 - root - ERROR - ❌ 3-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-07-25 00:22:17,574 - root - ERROR - ❌ 4-bosqich havola yaratishda xatolik:
+Traceback (most recent call last):
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/bot.py", line 75, in send_secret_channel
+    invite_link: ChatInviteLink = await bot.create_chat_invite_link(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/bot.py", line 2210, in create_chat_invite_link
+    result = await self.request(api.Methods.CREATE_CHAT_INVITE_LINK, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/kali/Desktop/N61 homeworks/bot projects/referal_bot/env/lib/python3.11/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
